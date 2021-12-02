@@ -1,0 +1,28 @@
+.header {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35px;
+    z-index: 10;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        transform: translateX(-100%);
+    }
+
+    &__list {
+        display: flex;
+        // padding-left: 90px;
+        margin-left: -32px;
+        list-style-type: none;
+        gap: 72px;
+    }
+
+    &__link {
+        color: #fff;
+    }
+}

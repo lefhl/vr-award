@@ -1,0 +1,54 @@
+// colors
+$primary: #8551cf;
+$black: #111;
+$main-bg: #f9eee9;
+$vr-color: #cf076a;
+
+// media
+@mixin xlg() {
+    @media (max-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin xlg-up() {
+    @media (min-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin lg() {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin lg-up() {
+    @media (min-width: 1025px) {
+        @content;
+    }
+}
+
+@mixin md() {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin md-up() {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin sm() {
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin sm-up() {
+    @media (min-width: 601px) {
+        @content;
+    }
+}

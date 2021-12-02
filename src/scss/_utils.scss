@@ -1,0 +1,51 @@
+.wrapper {
+    width: 100%;
+    max-width: 1320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+// .upp {
+//     text-transform: uppercase;
+// }
+
+// .nowrap {
+//     white-space: nowrap;
+// }
+
+@include lg {
+    .hide-for-lg {
+        display: none !important;
+    }
+}
+
+@include lg-up {
+    .hide-for-lg-up {
+        display: none !important;
+    }
+}
+
+@include sm {
+    .hide-for-sm {
+        display: none !important;
+    }
+}
+
+@include sm-up {
+    .hide-for-sm-up {
+        display: none !important;
+    }
+}

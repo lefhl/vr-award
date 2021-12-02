@@ -1,0 +1,42 @@
+.steps {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    h2 {
+        color: $primary;
+        margin-bottom: 29px;
+    }
+    h3 {
+        font-weight: 400;
+        color: #000;
+    }
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 35px;
+        gap: 21px;
+        font-weight: 300;
+    }
+    &__number {
+        width: 53px;
+        height: 53px;
+        background-image: url(./../images/blob-step.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-style: italic;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__content {
+        strong {
+            font-weight: 500;
+            color: $primary;
+        }
+    }
+
+    &__exclamation {
+        display: inline-block;
+        margin: 0 10px;
+    }
+}

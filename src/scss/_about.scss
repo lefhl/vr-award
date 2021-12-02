@@ -1,0 +1,62 @@
+.about {
+    padding-top: 130px;
+    font-size: 30px;
+    font-weight: 300;
+
+    &__header {
+        h2 {
+            margin-bottom: 21px;
+            color: $primary;
+        }
+    }
+
+    &__vr {
+        margin-bottom: 26px;
+    }
+
+    &__vr-link {
+        font-weight: 500;
+        color: $vr-color;
+        position: relative;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            width: 100%;
+            height: 2px;
+            background-color: currentColor;
+            left: 0;
+        }
+    }
+
+    &__description {
+        margin-bottom: 24px;
+    }
+
+    &__benefits {
+        width: 88%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style-type: none;
+        grid-gap: 50px;
+    }
+    &__benefit {
+        display: flex;
+        gap: 12px;
+        line-height: 1.2;
+        p {
+            line-height: 1.2;
+        }
+    }
+    &__tilde {
+        color: $primary;
+        font-weight: bold;
+    }
+}

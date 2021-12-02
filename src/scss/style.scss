@@ -1,0 +1,17 @@
+@charset "utf-8";
+$imagesPath: "../images/" !default;
+$fontsPath: "../fonts/" !default;
+
+@import "fonts";
+@import "settings";
+@import "common";
+@import "utils";
+@import "header";
+@import "btn";
+@import "footer";
+@import "checkbox";
+
+@import "promo";
+@import "about";
+@import "steps";
+@import "prizes";
