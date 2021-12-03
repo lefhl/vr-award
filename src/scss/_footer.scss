@@ -17,6 +17,15 @@
         z-index: -1;
         pointer-events: none;
         line-height: 0;
+
+        img {
+            opacity: 0;
+            transition: all 0.9s;
+
+            &.loaded {
+                opacity: 1;
+            }
+        }
     }
 
     &__blob-1 {
@@ -45,6 +54,11 @@
         line-height: 1;
         font-size: 30px;
 
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: 8px;
+        }
+
         img {
             margin-right: 11px;
         }
@@ -60,5 +74,8 @@
         align-items: center;
         justify-content: center;
         line-height: 0;
+        a:hover {
+            opacity: 0.75;
+        }
     }
 }

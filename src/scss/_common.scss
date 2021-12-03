@@ -24,6 +24,17 @@ body {
     & > main {
         flex-grow: 1;
     }
+
+    & *.anim {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.3s, transform 0.3s;
+    }
+
+    & *.loaded {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 a {
@@ -64,5 +75,33 @@ label {
     cursor: pointer;
 }
 
+.transition-lock {
+    * {
+        transition: none !important;
+    }
+}
+
 @include md {
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+}
+
+.animate__slideInLeft {
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    & + & {
+        animation-delay: 0.7s !important;
+    }
 }

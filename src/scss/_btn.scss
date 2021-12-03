@@ -13,11 +13,11 @@
     text-transform: uppercase;
     background: linear-gradient(101.17deg, #ff7bac 20.52%, #d2497c 94.18%);
     box-shadow: 0px 3px 66px rgba(0, 0, 0, 0.15);
-    transition: opacity 0.3s ease;
+    transition: box-shadow 0.3s ease;
     font-weight: 900;
 
     &:hover {
-        opacity: 0.7;
+        box-shadow: 0 4px 10px rgba(#ff7bac, 0.08);
         transition: none;
     }
 

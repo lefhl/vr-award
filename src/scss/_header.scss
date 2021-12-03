@@ -5,6 +5,15 @@
     right: 0;
     top: 35px;
     z-index: 10;
+    &.anim {
+        transition: transform 0.8s ease 0.3s, opacity 0.5s ease 0.3s;
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    &.loaded {
+        transform: translateY(0);
+        opacity: 1;
+    }
     &__wrapper {
         display: flex;
         align-items: center;
@@ -24,5 +33,10 @@
 
     &__link {
         color: #fff;
+
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: 8px;
+        }
     }
 }
