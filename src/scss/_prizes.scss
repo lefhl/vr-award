@@ -39,4 +39,10 @@
             font-weight: 500;
         }
     }
+
+    @media (max-width: 1240px) {
+        h3 {
+            font-size: 27px;
+        }
+    }
 }

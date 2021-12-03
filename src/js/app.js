@@ -18,14 +18,25 @@ window.onload = function () {
     },
   }).observe();
 
-  // document.querySelectorAll(".anim").forEach((item) => {
-  //   item.addEventListener(
-  //     "animationend",
-  //     function () {
-  //       const $el = this;
-  //       $el.classList.add("loaded");
-  //     },
-  //     { once: true }
-  //   );
-  // });
+  document.querySelector(".burger").addEventListener(
+    "click",
+    function () {
+      document.querySelector(".header__list").classList.toggle("js-active");
+      this.classList.toggle("js-active");
+      document.body.classList.toggle("scroll-lock");
+    },
+    { passive: true }
+  );
+
+  document.querySelectorAll(".header__link").forEach((item) => {
+    item.addEventListener(
+      "click",
+      function () {
+        document.querySelector(".burger").classList.remove("js-active");
+        document.body.classList.remove("scroll-lock");
+        document.querySelector(".header__list").classList.remove("js-active");
+      },
+      { passive: true }
+    );
+  });
 };

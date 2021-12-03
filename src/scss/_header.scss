@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     top: 35px;
-    z-index: 10;
+    z-index: 100;
     &.anim {
         transition: transform 0.8s ease 0.3s, opacity 0.5s ease 0.3s;
         transform: translateY(-100%);
@@ -19,13 +19,16 @@
         align-items: center;
     }
 
+    &__close {
+        display: none;
+    }
+
     &__logo {
         transform: translateX(-100%);
     }
 
     &__list {
         display: flex;
-        // padding-left: 90px;
         margin-left: -32px;
         list-style-type: none;
         gap: 72px;
@@ -37,6 +40,69 @@
         &:hover {
             text-decoration: underline;
             text-underline-offset: 8px;
+        }
+    }
+
+    @media (max-width: 1600px) {
+        &__logo {
+            transform: none;
+            margin-right: 72px;
+        }
+
+        &__list {
+            margin-left: 0;
+        }
+    }
+
+    @media (max-width: 1240px) {
+        &__logo {
+            margin-right: 30px;
+        }
+        nav {
+            margin-left: auto;
+        }
+        &__list {
+            gap: 40px;
+        }
+    }
+
+    @media (max-width: 960px) {
+        top: 18px;
+
+        &__list {
+            transform: translateX(-100%);
+            position: absolute;
+            left: 0;
+            min-height: 100vh;
+            background: linear-gradient(180deg, #7d3dc1 0%, #a670e0 100%);
+            top: -18px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 50vw;
+            padding: 40px 20px;
+            font-size: 30px;
+            gap: 30px;
+            line-height: 1;
+            transition: transform 0.3s ease;
+            &.js-active {
+                transform: translateX(0);
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        &__close {
+            display: block;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        &__list {
+            width: 100vw;
         }
     }
 }

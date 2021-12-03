@@ -127,4 +127,10 @@
         display: flex;
         justify-content: center;
     }
+
+    @media (max-width: 1240px) {
+        &__title {
+            font-size: 35px;
+        }
+    }
 }

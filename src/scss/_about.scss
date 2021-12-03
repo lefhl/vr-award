@@ -2,6 +2,8 @@
     padding-top: 130px;
     font-size: 30px;
     font-weight: 300;
+    position: relative;
+    z-index: 1;
 
     &__header {
         h2 {
@@ -58,5 +60,9 @@
     &__tilde {
         color: $primary;
         font-weight: bold;
+    }
+
+    @media (max-width: 1240px) {
+        font-size: 25px;
     }
 }

@@ -81,7 +81,28 @@ label {
     }
 }
 
-@include md {
+.scroll-lock {
+    overflow: hidden;
+}
+
+@media (max-width: 1240px) {
+    body {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
 }
 
 @keyframes slideInLeft {
