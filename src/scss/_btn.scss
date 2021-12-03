@@ -20,6 +20,13 @@
         opacity: 0.7;
         transition: none;
     }
+
+    &_lg {
+        height: 119px;
+        padding: 0 69px;
+        font-size: 35px;
+    }
+
     @include md {
     }
 }

@@ -1,0 +1,31 @@
+.cta {
+    background: linear-gradient(180deg, #7d3dc1 0%, #a670e0 100%);
+    padding: 160px 0;
+    text-align: center;
+    color: #fff;
+
+    h2 {
+        font-size: 40px;
+        line-height: 1.6;
+        margin-bottom: 43px;
+        font-weight: normal;
+    }
+
+    &__wrapper {
+        max-width: 1000px;
+    }
+
+    &__btn {
+        margin-bottom: 43px;
+    }
+
+    &__link {
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    &__desc {
+        font-weight: 300;
+        line-height: 1.6;
+    }
+}

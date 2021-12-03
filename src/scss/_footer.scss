@@ -1,2 +1,64 @@
 .footer {
+    padding: 156px 0 56px;
+    position: relative;
+    z-index: 1;
+
+    h2 {
+        font-size: 60px;
+        font-weight: normal;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    &__blob-1,
+    &__blob-2 {
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        pointer-events: none;
+        line-height: 0;
+    }
+
+    &__blob-1 {
+        left: 0;
+    }
+    &__blob-2 {
+        right: 0;
+    }
+
+    &__wrapper {
+        max-width: 760px;
+        text-align: center;
+        margin-bottom: 157px;
+    }
+    &__desc {
+        margin-bottom: 46px;
+        line-height: 1.6;
+    }
+    &__links {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__author-link {
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        font-size: 30px;
+
+        img {
+            margin-right: 11px;
+        }
+    }
+
+    &__email {
+        font-weight: 500;
+    }
+
+    &__socs {
+        display: flex;
+        gap: 48px;
+        align-items: center;
+        justify-content: center;
+        line-height: 0;
+    }
 }
