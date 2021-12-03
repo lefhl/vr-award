@@ -38,6 +38,18 @@
     }
 }
 
+@include md {
+    .hide-for-md {
+        display: none !important;
+    }
+}
+
+@include md-up {
+    .hide-for-md-up {
+        display: none !important;
+    }
+}
+
 @include sm {
     .hide-for-sm {
         display: none !important;

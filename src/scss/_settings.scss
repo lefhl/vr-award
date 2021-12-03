@@ -30,13 +30,13 @@ $vr-color: #cf076a;
 }
 
 @mixin md() {
-    @media (max-width: 768px) {
+    @media (max-width: 960px) {
         @content;
     }
 }
 
 @mixin md-up() {
-    @media (min-width: 768px) {
+    @media (min-width: 961px) {
         @content;
     }
 }

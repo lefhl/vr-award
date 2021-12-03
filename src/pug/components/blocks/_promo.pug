@@ -1,7 +1,7 @@
 section.promo
   .promo__main
     .wrapper.promo__content
-      div
+      .promo__content-wrapper
         h1.promo__title.animate__slideInLeft Выбери лучшие веганские продукты 2021 года!
         p.promo__subtitle.animate__slideInLeft Vegan Russian Awards — премия для производителей веганских продуктов
         .promo__cta.anim
@@ -9,6 +9,10 @@ section.promo
           a(href="#nominations").promo__link Смотреть номинации
       .promo__logo
         img(src="./images/award.webp", alt="Логотип премии").anim
-        .promo__dots: img(src="./images/dots.svg", alt="")
-    .promo__blob: img(src="./images/blob.webp", alt="").lozad
-    .promo__blobs-group: img(src="./images/blobs-group.webp", alt="").lozad
+        .promo__dots: img(src="./images/dots.svg", alt="").hide-for-md
+    .promo__blob
+      img(src="./images/blob.webp", alt="").lozad.hide-for-md
+      img(src="./images/blob-dotted-promo.webp", alt="").lozad.hide-for-md-up
+    .promo__blobs-group
+      img(src="./images/blobs-group.webp", alt="").lozad.hide-for-md
+      img(src="./images/blob-mobile-promo.webp", alt="").lozad.hide-for-md-up

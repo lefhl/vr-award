@@ -1,8 +1,8 @@
 .burger {
-    display: inline-block;
     position: relative;
     width: 39px;
     height: 19px;
+    display: none;
 
     &__line {
         position: absolute;
@@ -30,6 +30,7 @@
         }
     }
     @media (max-width: 960px) {
+        display: block;
         &.js-active {
             .burger__line {
                 opacity: 0;
