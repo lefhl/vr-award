@@ -1,0 +1,40 @@
+-
+  var items = [
+    [
+      {title:"Лучшее веганское молоко", img:"./images/bg01.webp"},
+      {title:"Лучшее веганское бариста молоко", img:"./images/bg02.webp"},
+      {title:"Лучший веганский йогурт", img:"./images/bg03.webp"},
+      {title:"Лучший веганский сыр", img:"./images/bg04.webp"}
+    ],
+    [
+      {title:"Лучшее веганское мороженое", img:"./images/bg05.webp"},
+      {title:"Лучший веганский сырок", img:"./images/bg06.webp"},
+      {title:"Лучший веганский майонез", img:"./images/bg07.webp"},
+      {title:"Лучший крем-чиз", img:"./images/bg08.webp"},
+    ],
+    [
+      {title:"Лучший продукт для замены мяса", img:"./images/bg05.webp"},
+      {title:"Лучший продукт для замены курицы", img:"./images/bg05.webp"},
+      {title:"Лучший продукт для замены рыбы", img:"./images/bg05.webp"},
+      {title:"Лучший продукт для замены яиц", img:"./images/bg05.webp"},
+    ],
+    [
+      {title:"Лучшие веганские пельмени", img:"./images/bg05.webp"},
+      {title:"Лучший веганский паштет", img:"./images/bg05.webp"},
+      {title:"Лучшие веганские сосиски", img:"./images/bg05.webp"}
+    ],
+    [
+      {title:"Лучшая веганская колбаса", img:"./images/bg05.webp"},
+      {title:"Лучший тофу", img:"./images/bg05.webp"},
+    ]
+  ]
+
+
+section.nominations
+  .wrapper
+    each arr, idx in items
+      .nominations__wrapper
+        each item in arr
+          .nominations__item
+            .nominations__img: img(data-src=item.img, alt="").lozad
+            .nominations__text= item.title
