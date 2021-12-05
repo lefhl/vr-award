@@ -6,5 +6,12 @@ html.no-js(lang='ru')
       include components/blocks/_header_on_light
       main
         include components/blocks/_results_empty
-        include components/blocks/_cta
+        section.cta
+          .wrapper.cta__wrapper
+            h2.anim А пока переходите и голосуйте за свои любимые продукты в выбранных на 2021 год номинациях!
+            a(href="/vote.html").btn.btn_lg.cta__btn.anim ПЕРЕЙТИ К ГОЛОСОВАНИЮ
+            p.cta__desc.anim Перед голосованием просим вас ознакомиться
+              br
+              |&nbsp;с <a href="/#rules" class="cta__link">правилами голосования</a>, указанными в информации о премии
+
       include components/blocks/_footer
