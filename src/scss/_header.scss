@@ -87,9 +87,47 @@
             gap: 30px;
             line-height: 1;
             transition: transform 0.3s ease;
+            overflow: hidden;
             &.js-active {
                 transform: translateX(0);
             }
+
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+                pointer-events: none;
+            }
+
+            &::after {
+                background: radial-gradient(
+                    50% 50% at 50% 50%,
+                    #fff7af 0%,
+                    rgba(174, 122, 230, 0) 100%
+                );
+                width: 513px;
+                height: 513px;
+                right: -298px;
+                bottom: -343px;
+            }
+
+            &::before {
+                background: radial-gradient(
+                    50% 50% at 50% 50%,
+                    #ffc7d8 0%,
+                    rgba(174, 122, 230, 0) 100%
+                );
+                top: -421px;
+                left: -360px;
+                width: 604px;
+                height: 604px;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__logo img {
+            width: 62px;
         }
     }
 
