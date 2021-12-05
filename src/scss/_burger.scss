@@ -4,6 +4,12 @@
     height: 19px;
     display: none;
 
+    &_purple {
+        .burger__line {
+            background-color: $primary;
+        }
+    }
+
     &__line {
         position: absolute;
         width: 100%;
@@ -46,6 +52,14 @@
                     bottom: 50%;
                     transform: translateY(50%) rotate(-45deg);
                 }
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        &.js-active {
+            .burger__line {
+                background-color: #fff;
             }
         }
     }

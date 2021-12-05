@@ -32,11 +32,14 @@
         margin-left: -32px;
         list-style-type: none;
         gap: 72px;
+        color: #fff;
+
+        &_dark {
+            color: #000;
+        }
     }
 
     &__link {
-        color: #fff;
-
         &:hover {
             text-decoration: underline;
             text-underline-offset: 8px;
@@ -88,6 +91,7 @@
             line-height: 1;
             transition: transform 0.3s ease;
             overflow: hidden;
+            color: #fff;
             &.js-active {
                 transform: translateX(0);
             }
