@@ -1,11 +1,17 @@
+include components/blocks/_vote-nav
+
 doctype html
 html.no-js(lang='ru')
   include components/blocks/_head
-  body
-    main.wrapper
-      h1 Готовые страницы
-      ol(style="margin-left: 24px")
-        li(style="margin-bottom: 12px"): a(href="main.html") Главная
-        li(style="margin-bottom: 12px"): a(href="results.html") Страница с результатами
-        li(style="margin-bottom: 12px"): a(href="vote.html") Страница голосования
-
+  body.transition-lock
+    block page
+      include components/blocks/_header
+      main
+        include components/blocks/_promo
+        include components/blocks/_about
+        include components/blocks/_steps
+        include components/blocks/_prizes
+        include components/blocks/_nominations
+        include components/blocks/_cta
+      include components/blocks/_footer
+    +vote-nav(false)
