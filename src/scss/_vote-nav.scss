@@ -10,6 +10,7 @@
 
     &.js-active {
         transform: translateY(-50%);
+        z-index: 1000;
     }
 
     &__btn {
@@ -90,6 +91,7 @@
         &__btn {
             height: 40px;
             font-size: 15px;
+            top: 70%;
             padding: 0 14px;
             border-radius: 15px 15px 0 0;
             transform: translateX(-85%) rotate(-90deg) translateY(-50%)

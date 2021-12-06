@@ -48,4 +48,14 @@ window.onload = function () {
 
     { passive: true }
   );
+
+  document.querySelectorAll(".vote-nav__link").forEach((item) => {
+    item.addEventListener(
+      "click",
+      function () {
+        document.querySelector(".vote-nav").classList.remove("js-active");
+      },
+      { passive: true }
+    );
+  });
 };
