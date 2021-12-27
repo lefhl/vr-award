@@ -39,23 +39,4 @@ window.onload = function () {
       { passive: true }
     );
   });
-
-  document.querySelector(".vote-nav__btn").addEventListener(
-    "click",
-    () => {
-      document.querySelector(".vote-nav").classList.toggle("js-active");
-    },
-
-    { passive: true }
-  );
-
-  document.querySelectorAll(".vote-nav__link").forEach((item) => {
-    item.addEventListener(
-      "click",
-      function () {
-        document.querySelector(".vote-nav").classList.remove("js-active");
-      },
-      { passive: true }
-    );
-  });
 };
