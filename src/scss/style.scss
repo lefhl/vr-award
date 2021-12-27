@@ -21,4 +21,7 @@ $fontsPath: "../fonts/" !default;
 @import "results";
 @import "voting-header";
 @import "voting";
-@import "vote-nav";
+
+a[href*="/vote.html"] {
+    pointer-events: none;
+}
