@@ -1,0 +1,32 @@
+.winner {
+    max-width: Min(874px, 60%);
+    border-radius: 28.7705px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+    position: relative;
+    display: grid;
+    grid-template-areas: "block";
+
+    &__img {
+        line-height: 0;
+        grid-area: block;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__content {
+        padding: 70px 20px 20px;
+        grid-area: block;
+        text-align: center;
+        z-index: 1;
+    }
+
+    &__nomination {
+        margin-bottom: 50px;
+        font-size: 40px;
+        font-style: italic;
+    }
+}

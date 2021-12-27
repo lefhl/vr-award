@@ -1,0 +1,46 @@
+include components/blocks/_vote-nav
+
+
+doctype html
+html.no-js(lang='ru')
+  include components/blocks/_head
+  body.transition-lock
+    block page
+      header.header.anim
+        .wrapper.header__wrapper
+          a(href="/" title="На главную").header__logo: img(src="./images/logo.webp", alt="Логотип сайта")
+          nav
+            ul.header__list
+              li: a(href="/#about").header__link О премии
+              li: a().header__link Голосовать
+              li: a(href="/#nominations").header__link Номинации
+              li: a(href="#contacts").header__link Контакты
+              li: a(href="/results.html").header__link Результаты 2021
+
+          button(type="button").header__burger
+            span.burger
+              span.burger__line.burger__line_top
+              span.burger__line
+              span.burger__line.burger__line_bottom
+
+      section.voting-header.voting-header_results
+        .wrapper
+          .voting-header__dots
+            .voting-header__big-dot
+            .voting-header__small-dot
+          .voting-header__small-dot
+          h1.anim результаты <span>vegan russian</span> awards&nbsp;2021
+        img(src="./images/blob-3.webp", alt="").voting-header__blob-1
+        img(src="./images/blob-4.webp", alt="").voting-header__blob-2
+
+      main.total
+        .wrapper
+          .winner
+            .winner__img
+              img(data-src="./images/res1-min.webp", alt="").lozad
+            .winner__content
+              h2.winner__nomination Лучшее веганское молоко
+
+
+      include components/blocks/_footer
+
