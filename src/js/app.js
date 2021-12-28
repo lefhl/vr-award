@@ -39,4 +39,11 @@ window.onload = function () {
       { passive: true }
     );
   });
+
+  document.querySelectorAll(".accordion__title").forEach((item) => {
+    item.addEventListener("click", function () {
+      const parent = this.closest(".accordion");
+      parent.classList.toggle("active");
+    });
+  });
 };

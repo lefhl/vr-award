@@ -21,6 +21,10 @@ $fontsPath: "../fonts/" !default;
 @import "results";
 @import "voting-header";
 @import "voting";
+@import "total";
+@import "winner";
+@import "contestant";
+@import "accordion";
 
 a[href*="/vote.html"] {
     pointer-events: none;
