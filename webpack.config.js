@@ -154,7 +154,7 @@ module.exports = function (env, argv) {
       ...templates,
       new CleanWebpackPlugin({ dry: false, cleanStaleWebpackAssets: false }),
       new MiniCssExtractPlugin({
-        filename: "./css/style.css",
+        filename: "./css/style.[contenthash].css",
       }),
       new ImageminWebpWebpackPlugin(),
       new CopyPlugin({
