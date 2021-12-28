@@ -54,6 +54,7 @@ module.exports = function (env, argv) {
 
     entry: ["./src/js/app.js"],
     output: {
+      filename: '[name].[contenthash].js',
       path: path.resolve(__dirname, "dist"),
       publicPath: "./",
     },
