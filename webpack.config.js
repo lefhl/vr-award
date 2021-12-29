@@ -54,6 +54,7 @@ module.exports = function (env, argv) {
 
     entry: ["./src/js/app.js"],
     output: {
+      filename: '[name].[contenthash].js',
       path: path.resolve(__dirname, "dist"),
       publicPath: "./",
     },
@@ -154,7 +155,7 @@ module.exports = function (env, argv) {
       ...templates,
       new CleanWebpackPlugin({ dry: false, cleanStaleWebpackAssets: false }),
       new MiniCssExtractPlugin({
-        filename: "./css/style.css",
+        filename: "./css/style.[contenthash].css",
       }),
       new ImageminWebpWebpackPlugin(),
       new CopyPlugin({
